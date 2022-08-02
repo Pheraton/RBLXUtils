@@ -1,2 +1,2 @@
 # RBLXUtils
-A collection libraries maintained and used by Pheraton
+A collection of libraries maintained and used by Pheraton
