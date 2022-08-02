@@ -37,7 +37,7 @@ The example we showed for this implemention will actually work given that you ch
 As far as we know, this implemention supports all kind of data.
 ___
 # Performance and best practices 
-
+* Don't hold cases with the same key
 * If you are in a situation where you need to run the switch implemention multiple times, consider initilizing the table once and then use it. Example
    ```lua
    local CaseTbl = {
