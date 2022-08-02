@@ -3,7 +3,8 @@
 	
 	While this simulated class tries to be performant as much as possible, which does it perfectly, 
 	It is just a syntax sugar, which means you won't gain any performance gains from using it
-	Use Switch only for debugging and testing purposes.
+	
+	Based on our benchmarking, this implemention is only slower slighty from if-statements. The benchmarking results will be documented soon.
 ]]
 
 
