@@ -21,7 +21,7 @@ switch(input) {
     print("it is 1") 
   end,
   
-  [default] = function() 
+  ["default"] = function() 
     print("it isnt found")
   end
 }
@@ -35,3 +35,21 @@ The example we showed for this implemention will actually work given that you ch
 
 ## Support for datatypes
 As far as we know, this implemention supports all kind of data.
+___
+# Performance and best practices 
+
+* If you are in a situation where you need to run the switch implemention multiple times, consider initilizing the table once and then use it. Example
+   ```lua
+   local CaseTbl = {
+     [1] = function()
+      print("INPUT IS 1")
+     end,
+     
+     ["default"] = function(input)
+      print(input, "ISN'T A VALID OPTION")
+     end,
+   }
+   
+   switch(1)(CaseTbl) -- run as much as you would ike
+   ```
+   
