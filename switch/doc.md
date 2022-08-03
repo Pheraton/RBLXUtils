@@ -19,11 +19,11 @@ While a switch emulation using this implemention may look like:
 switch(input) {
   [1] = function() 
     print("it is 1") 
-  end,
+  end;
   
   ["default"] = function() 
     print("it isnt found")
-  end
+  end;
 }
 ```
 
